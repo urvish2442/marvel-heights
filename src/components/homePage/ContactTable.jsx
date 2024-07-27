@@ -71,7 +71,7 @@ const ContactTable = ({ columns, data }) => {
                         onChange={(e) => {
                             setPageSize(Number(e.target.value));
                         }}
-                        className="w-50"
+                        className="w-100 mx-1"
                     >
                         {[20, 50, 110].map((pageSize) => (
                             <option key={pageSize} value={pageSize}>

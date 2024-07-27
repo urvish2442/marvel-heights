@@ -94,11 +94,13 @@ export default function Home() {
                     <ContactTable />
                 </div>
             </div> */}
-            <div className="d-flex w-100 border-primary border-1 flex-column justify-content-center align-items-center">
-                <h1 className="fw-bold">
+            <div className="container">
+                <h1 className="fw-bold text-center">
                     <u>Marvel Heights</u>
                 </h1>
-                <ContactTable columns={columns} data={data} />
+                <div style={{ overflow: "auto" }}>
+                    <ContactTable columns={columns} data={data} />
+                </div>
             </div>
         </main>
     );
