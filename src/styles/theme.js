@@ -20,7 +20,8 @@ export default {
     // gray300: '#D6D6D6',
     // blue800: '#023668',
     // blue900: '#003E7A',
-    gradient: 'linear-gradient(90.25deg, #2BD7EF -18.72%, #FB4EF1 121.02%)',
+    // gradient: 'linear-gradient(90.25deg, #2BD7EF -18.72%, #FB4EF1 121.02%)',
+    gradient: 'linear-gradient(105deg,  #3a6186, #89253e)',
     backgroundOpactiy03: 'rgba(245, 245, 245, 0.3)'
   }
 };
