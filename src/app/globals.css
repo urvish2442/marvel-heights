@@ -105,3 +105,9 @@ a {
     color-scheme: dark;
   }
 } */
+
+
+table tbody tr.rental {
+  --bs-table-bg: transparent !important;
+  background-color: #cfcfff!important; /* Light red background */
+}

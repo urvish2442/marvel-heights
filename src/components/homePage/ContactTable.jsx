@@ -8,6 +8,7 @@ import {
 } from "react-table";
 import { Table, InputGroup, FormControl, Form } from "react-bootstrap";
 import { Button } from "@/styles/pages/main.style";
+import "@/styles/globals.css";
 
 const ContactTable = ({ columns, data }) => {
     const {
@@ -30,7 +31,7 @@ const ContactTable = ({ columns, data }) => {
         {
             columns,
             data,
-            initialState: { pageIndex: 0, pageSize: 20 }, // Set default page size to 50
+            initialState: { pageIndex: 0, pageSize: 20 }, // Set default page size to 20
         },
         useGlobalFilter,
         useSortBy,
@@ -108,8 +109,17 @@ const ContactTable = ({ columns, data }) => {
                 <tbody {...getTableBodyProps()}>
                     {page.map((row) => {
                         prepareRow(row);
+                        const isRental = row.original.is_rental == "1";
                         return (
-                            <tr {...row.getRowProps()}>
+                            <tr
+                                {...row.getRowProps()}
+                                style={
+                                    isRental
+                                        ? { backgroundColor: "#ff0000" }
+                                        : {}
+                                }
+                                className={isRental ? "rental" : ""}
+                            >
                                 {row.cells.map((cell) => (
                                     <td
                                         {...cell.getCellProps()}

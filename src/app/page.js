@@ -59,8 +59,20 @@ export default function Home() {
             accessor: "contact_no",
         },
         {
-            Header: "Other contact number",
+            Header: "Other Contact number",
             accessor: "other_contact_no",
+        },
+        {
+            Header: "Two Wheel 1",
+            accessor: "two_wheel_1",
+        },
+        {
+            Header: "Two Wheel 2",
+            accessor: "two_wheel_2",
+        },
+        {
+            Header: "Four Wheel",
+            accessor: "four_wheel",
         },
     ];
 
@@ -83,7 +95,9 @@ export default function Home() {
                 </div>
             </div> */}
             <div className="d-flex w-100 border-primary border-1 flex-column justify-content-center align-items-center">
-                <h1 className="fw-bold"><u>Marvel Heights</u></h1>
+                <h1 className="fw-bold">
+                    <u>Marvel Heights</u>
+                </h1>
                 <ContactTable columns={columns} data={data} />
             </div>
         </main>
