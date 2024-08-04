@@ -39,7 +39,7 @@ const ContactTable = ({ columns, data }) => {
     );
 
     const renderCell = (cell) => {
-        if (cell.column.id === "contactNumber") {
+        if (cell.column.id === "contact_no") {
             // Adjust this condition based on your column id
             return (
                 <a href={`tel:${cell.value}`} className="text-center">
